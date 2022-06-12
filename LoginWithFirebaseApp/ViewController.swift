@@ -26,6 +26,21 @@ class ViewController: UIViewController  {
             }
             
             print("認証情報の保存に成功しました。")
+            
+            guard let uid = Auth.auth().currentUser?.uid else {return}
+            guard let name = self.usernameTextField.text else {return}
+            
+            let docData = ["email": email, "name": name, "createdAt": Timestamp()] as [String : Any]
+            
+//            FirebaseDBに登録しているコレクション(Entity名)の選択
+            Firestore.firestore().collection("users").document(uid).setData(docData) { (err) in
+                if let err = err {
+                    print("FIrestoreへの保存に失敗しました。\(err)")
+                    return
+                }
+                
+                print("FIrestoreへの保存に失敗しました。")
+            }
         }
         
         print("tapped")
