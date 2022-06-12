@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		29E5B5EFC9B7C2F2E57EEB86 /* Pods_LoginWithFirebaseApp_LoginWithFirebaseAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 730BBA9AE68FE34B256CBA8C /* Pods_LoginWithFirebaseApp_LoginWithFirebaseAppUITests.framework */; };
+		3D0249EF285626D2004D0620 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0249EE285626D1004D0620 /* Home.storyboard */; };
+		3D0249F3285628DD004D0620 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0249F2285628DD004D0620 /* HomeViewController.swift */; };
 		3D578A432855CACE0056AA68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D578A422855CACE0056AA68 /* GoogleService-Info.plist */; };
 		3DE51C852854B5B0004A1384 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE51C842854B5B0004A1384 /* AppDelegate.swift */; };
 		3DE51C872854B5B0004A1384 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE51C862854B5B0004A1384 /* SceneDelegate.swift */; };
@@ -44,6 +46,8 @@
 		034FE496B6FDED6AD6F500D3 /* Pods-LoginWithFirebaseAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginWithFirebaseAppTests.debug.xcconfig"; path = "Target Support Files/Pods-LoginWithFirebaseAppTests/Pods-LoginWithFirebaseAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		19AFAE2C367FC5E7F4938EFB /* Pods-LoginWithFirebaseApp-LoginWithFirebaseAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginWithFirebaseApp-LoginWithFirebaseAppUITests.release.xcconfig"; path = "Target Support Files/Pods-LoginWithFirebaseApp-LoginWithFirebaseAppUITests/Pods-LoginWithFirebaseApp-LoginWithFirebaseAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		38819D8A759C77ADBB60D75D /* Pods-LoginWithFirebaseAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginWithFirebaseAppTests.release.xcconfig"; path = "Target Support Files/Pods-LoginWithFirebaseAppTests/Pods-LoginWithFirebaseAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		3D0249EE285626D1004D0620 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		3D0249F2285628DD004D0620 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3D578A422855CACE0056AA68 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3DE51C812854B5B0004A1384 /* LoginWithFirebaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginWithFirebaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE51C842854B5B0004A1384 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 				3DE51C862854B5B0004A1384 /* SceneDelegate.swift */,
 				3DE51C882854B5B0004A1384 /* ViewController.swift */,
 				3DE51C8A2854B5B0004A1384 /* Main.storyboard */,
+				3D0249EE285626D1004D0620 /* Home.storyboard */,
+				3D0249F2285628DD004D0620 /* HomeViewController.swift */,
 				3DE51CB42854C746004A1384 /* UIColor-Extention.swift */,
 				3DE51C8D2854B5B4004A1384 /* Assets.xcassets */,
 				3DE51C8F2854B5B4004A1384 /* LaunchScreen.storyboard */,
@@ -287,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DE51C912854B5B4004A1384 /* LaunchScreen.storyboard in Resources */,
+				3D0249EF285626D2004D0620 /* Home.storyboard in Resources */,
 				3D578A432855CACE0056AA68 /* GoogleService-Info.plist in Resources */,
 				3DE51C8E2854B5B4004A1384 /* Assets.xcassets in Resources */,
 				3DE51C8C2854B5B0004A1384 /* Main.storyboard in Resources */,
@@ -417,6 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0249F3285628DD004D0620 /* HomeViewController.swift in Sources */,
 				3DE51C892854B5B0004A1384 /* ViewController.swift in Sources */,
 				3DE51CB52854C746004A1384 /* UIColor-Extention.swift in Sources */,
 				3DE51C852854B5B0004A1384 /* AppDelegate.swift in Sources */,
