@@ -129,7 +129,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="resisterButton" destination="0rZ-nH-dOx" id="6M4-Rs-8iC"/>
+                        <outlet property="emailTextField" destination="dvE-Tg-li2" id="hiQ-cc-MTs"/>
+                        <outlet property="passwordTextField" destination="PYe-L5-eof" id="3Bn-ES-jha"/>
+                        <outlet property="registerButton" destination="0rZ-nH-dOx" id="mQE-ml-1EF"/>
+                        <outlet property="usernameTextField" destination="Hyv-qR-PAJ" id="mAu-TU-2f7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
