@@ -7,6 +7,8 @@ target 'LoginWithFirebaseApp' do
 
   # Pods for LoginWithFirebaseApp
   pod 'Firebase/Analytics'
+  pod 'FirebaseAuth'
+  pod 'FirebaseFirestore'
 
   target 'LoginWithFirebaseAppTests' do
     inherit! :search_paths

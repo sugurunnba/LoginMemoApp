@@ -93,6 +93,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Resister">
                                     <fontDescription key="titleFontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tappedRegisterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r4a-i6-3ct"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UfZ-il-dc4">
                                 <rect key="frame" x="66.5" y="686" width="281.5" height="30"/>

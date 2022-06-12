@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController  {
 
@@ -14,6 +15,21 @@ class ViewController: UIViewController  {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var usernameTextField: UITextField!
     
+    @IBAction func tappedRegisterButton(_ sender: Any) {
+        guard let email = emailTextField.text else {return}
+        guard let password = passwordTextField.text else {return}
+        
+        Auth.auth().createUser(withEmail: email, password: password) { (res, err) in
+            if let err = err {
+                print("認証情報の保存に失敗しました。\(err)")
+                return
+            }
+            
+            print("認証情報の保存に成功しました。")
+        }
+        
+        print("tapped")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
