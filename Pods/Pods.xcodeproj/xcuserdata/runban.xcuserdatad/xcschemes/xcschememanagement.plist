@@ -102,33 +102,47 @@
 			<key>orderHint</key>
 			<integer>18</integer>
 		</dict>
-		<key>Pods-LoginWithFirebaseApp-LoginWithFirebaseAppUITests.xcscheme</key>
+		<key>PKHUD-PKHUDResources.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>21</integer>
 		</dict>
-		<key>Pods-LoginWithFirebaseApp.xcscheme</key>
+		<key>PKHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>20</integer>
 		</dict>
-		<key>Pods-LoginWithFirebaseAppTests.xcscheme</key>
+		<key>Pods-LoginWithFirebaseApp-LoginWithFirebaseAppUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>23</integer>
+		</dict>
+		<key>Pods-LoginWithFirebaseApp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>22</integer>
 		</dict>
+		<key>Pods-LoginWithFirebaseAppTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>24</integer>
+		</dict>
 		<key>PromisesObjC.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>23</integer>
+			<integer>25</integer>
 		</dict>
 		<key>abseil.xcscheme</key>
 		<dict>

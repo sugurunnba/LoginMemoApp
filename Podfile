@@ -9,6 +9,7 @@ target 'LoginWithFirebaseApp' do
   pod 'Firebase/Analytics'
   pod 'FirebaseAuth'
   pod 'FirebaseFirestore'
+  pod 'PKHUD', '~> 5.0'
 
   target 'LoginWithFirebaseAppTests' do
     inherit! :search_paths

@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import PKHUD
 
 //userのmodel
 struct User {
@@ -30,7 +31,16 @@ class ViewController: UIViewController  {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var usernameTextField: UITextField!
     
+//    登録ボタンが押された時
     @IBAction func tappedRegisterButton(_ sender: Any) {
+        handleAuthToFirebase()
+    }
+    
+//    登録ボタンが押された時に呼び出されるメソッド
+    private func handleAuthToFirebase() {
+//        登録中のぐるぐる画面の設定
+        HUD.show(.progress, onView: view)
+        
         guard let email = emailTextField.text else {return}
         guard let password = passwordTextField.text else {return}
         
@@ -39,14 +49,17 @@ class ViewController: UIViewController  {
 //            エラーが発生した場合
             if let err = err {
                 print("認証情報の保存に失敗しました。\(err)")
+                HUD.hide { (_) in
+                    HUD.flash(.error, delay: 1)
+                }
                 return
             }
-            self.addUerInfoRToFirestore(email: email)
+            self.addUerInfoToFirestore(email: email)
         }
     }
     
 //    メール・パスワードでエラーが発生しなかった時の処理を
-    private func addUerInfoRToFirestore(email: String) {
+    private func addUerInfoToFirestore(email: String) {
 //            成功した場合
             print("認証情報の保存に成功しました。")
             
@@ -63,6 +76,9 @@ class ViewController: UIViewController  {
                 (err) in
                 if let err = err {
                     print("FIrestoreへの保存に失敗しました。\(err)")
+                    HUD.hide { (_) in
+                        HUD.flash(.error, delay: 1)
+                    }
                     return
                 }
                 
@@ -72,6 +88,9 @@ class ViewController: UIViewController  {
                 userRef.getDocument{ (snapshot, err) in
                     if let err = err {
                         print("ユーザー情報の取得に失敗しました。\(err)")
+                        HUD.hide { (_) in
+                            HUD.flash(.error, delay: 1)
+                        }
                     }
                     
 //                    登録したデータを取得
@@ -79,16 +98,25 @@ class ViewController: UIViewController  {
 //                    取得したデータをモデルに変換して、変数化
                     let user = User.init(dic: data)
                     print("ユーザー情報の取得に成功しました。\(user.name)")
-                    
-//                    画面の遷移準備と
-                    let storyBoard = UIStoryboard(name: "Home", bundle: nil)
-//                    identifierを設定する際、「Use Storyboard　ID」をチェックも忘れずに。
-                    let homeViewController = storyBoard.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
-                    self.present(homeViewController, animated: true, completion: nil)
+                    HUD.hide { (_) in
+//                        成功した後に、画面遷移を行いたいので、成功後に遷移が始まるようにする
+                        HUD.flash(.success, onView: self.view, delay: 1) { (_) in
+                            self.presentToHomeViewController(user: user)
+                        }
+                    }
                 }
-                
-                
             }
+    }
+    
+    private func presentToHomeViewController(user: User) {
+//      画面の遷移準備
+        let storyBoard = UIStoryboard(name: "Home", bundle: nil)
+//      identifierを設定する際、「Use Storyboard　ID」をチェックも忘れずに。
+        let homeViewController = storyBoard.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
+        homeViewController.user = user
+//      遷移後の画面をフルスクリーン化
+        homeViewController.modalPresentationStyle = .fullScreen
+        self.present(homeViewController, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

@@ -52,6 +52,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Logout">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="31"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tappedLogoutButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="w9Z-Ud-Xiy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -72,7 +75,7 @@
                     <connections>
                         <outlet property="dateLabel" destination="b3n-Wt-Xw0" id="mVn-dE-CIi"/>
                         <outlet property="emailLabel" destination="XE3-Lr-BAU" id="C99-og-8Av"/>
-                        <outlet property="logoutButton" destination="ZHi-FQ-Pbg" id="Oca-cT-ZSL"/>
+                        <outlet property="logoutButton" destination="ZHi-FQ-Pbg" id="tPn-d2-7uf"/>
                         <outlet property="nameLabel" destination="9OL-A4-ABa" id="t2S-J2-3bx"/>
                     </connections>
                 </viewController>
