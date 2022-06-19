@@ -13,10 +13,11 @@
 		3D39E703285D73AF00331E66 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D39E702285D73AF00331E66 /* Login.storyboard */; };
 		3D39E705285D768E00331E66 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D39E704285D768E00331E66 /* LoginViewController.swift */; };
 		3D578A432855CACE0056AA68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D578A422855CACE0056AA68 /* GoogleService-Info.plist */; };
+		3DCF6608285F1635005D996E /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCF6607285F1635005D996E /* SignUp.storyboard */; };
+		3DCF660B285F241A005D996E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF660A285F241A005D996E /* User.swift */; };
 		3DE51C852854B5B0004A1384 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE51C842854B5B0004A1384 /* AppDelegate.swift */; };
 		3DE51C872854B5B0004A1384 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE51C862854B5B0004A1384 /* SceneDelegate.swift */; };
 		3DE51C892854B5B0004A1384 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE51C882854B5B0004A1384 /* ViewController.swift */; };
-		3DE51C8C2854B5B0004A1384 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE51C8A2854B5B0004A1384 /* Main.storyboard */; };
 		3DE51C8E2854B5B4004A1384 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE51C8D2854B5B4004A1384 /* Assets.xcassets */; };
 		3DE51C912854B5B4004A1384 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE51C8F2854B5B4004A1384 /* LaunchScreen.storyboard */; };
 		3DE51C9C2854B5B5004A1384 /* LoginWithFirebaseAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE51C9B2854B5B5004A1384 /* LoginWithFirebaseAppTests.swift */; };
@@ -53,11 +54,12 @@
 		3D39E702285D73AF00331E66 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		3D39E704285D768E00331E66 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3D578A422855CACE0056AA68 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3DCF6607285F1635005D996E /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		3DCF660A285F241A005D996E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3DE51C812854B5B0004A1384 /* LoginWithFirebaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginWithFirebaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE51C842854B5B0004A1384 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE51C862854B5B0004A1384 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3DE51C882854B5B0004A1384 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3DE51C8B2854B5B0004A1384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DE51C8D2854B5B4004A1384 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DE51C902854B5B4004A1384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DE51C922854B5B4004A1384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,6 +115,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3DCF6604285F1561005D996E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3DE51C882854B5B0004A1384 /* ViewController.swift */,
+				3D0249F2285628DD004D0620 /* HomeViewController.swift */,
+				3D39E704285D768E00331E66 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3DCF6605285F15AC005D996E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3D0249EE285626D1004D0620 /* Home.storyboard */,
+				3D39E702285D73AF00331E66 /* Login.storyboard */,
+				3DCF6607285F1635005D996E /* SignUp.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3DCF6606285F15DE005D996E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3DE51CB42854C746004A1384 /* UIColor-Extention.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3DCF6609285F2408005D996E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3DCF660A285F241A005D996E /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3DE51C782854B5B0004A1384 = {
 			isa = PBXGroup;
 			children = (
@@ -138,19 +176,16 @@
 		3DE51C832854B5B0004A1384 /* LoginWithFirebaseApp */ = {
 			isa = PBXGroup;
 			children = (
-				3DE51C842854B5B0004A1384 /* AppDelegate.swift */,
+				3DCF6609285F2408005D996E /* Models */,
+				3DCF6606285F15DE005D996E /* Helpers */,
+				3DCF6605285F15AC005D996E /* Storyboards */,
+				3DCF6604285F1561005D996E /* Controllers */,
 				3DE51C862854B5B0004A1384 /* SceneDelegate.swift */,
-				3DE51C882854B5B0004A1384 /* ViewController.swift */,
-				3DE51C8A2854B5B0004A1384 /* Main.storyboard */,
-				3D0249EE285626D1004D0620 /* Home.storyboard */,
-				3D0249F2285628DD004D0620 /* HomeViewController.swift */,
-				3DE51CB42854C746004A1384 /* UIColor-Extention.swift */,
+				3DE51C842854B5B0004A1384 /* AppDelegate.swift */,
 				3DE51C8D2854B5B4004A1384 /* Assets.xcassets */,
 				3DE51C8F2854B5B4004A1384 /* LaunchScreen.storyboard */,
 				3DE51C922854B5B4004A1384 /* Info.plist */,
 				3D578A422855CACE0056AA68 /* GoogleService-Info.plist */,
-				3D39E702285D73AF00331E66 /* Login.storyboard */,
-				3D39E704285D768E00331E66 /* LoginViewController.swift */,
 			);
 			path = LoginWithFirebaseApp;
 			sourceTree = "<group>";
@@ -301,9 +336,9 @@
 				3DE51C912854B5B4004A1384 /* LaunchScreen.storyboard in Resources */,
 				3D0249EF285626D2004D0620 /* Home.storyboard in Resources */,
 				3D39E703285D73AF00331E66 /* Login.storyboard in Resources */,
+				3DCF6608285F1635005D996E /* SignUp.storyboard in Resources */,
 				3D578A432855CACE0056AA68 /* GoogleService-Info.plist in Resources */,
 				3DE51C8E2854B5B4004A1384 /* Assets.xcassets in Resources */,
-				3DE51C8C2854B5B0004A1384 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +472,7 @@
 				3DE51CB52854C746004A1384 /* UIColor-Extention.swift in Sources */,
 				3DE51C852854B5B0004A1384 /* AppDelegate.swift in Sources */,
 				3DE51C872854B5B0004A1384 /* SceneDelegate.swift in Sources */,
+				3DCF660B285F241A005D996E /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,14 +509,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3DE51C8A2854B5B0004A1384 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3DE51C8B2854B5B0004A1384 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3DE51C8F2854B5B4004A1384 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -619,7 +647,7 @@
 				INFOPLIST_FILE = LoginWithFirebaseApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Home;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -648,7 +676,7 @@
 				INFOPLIST_FILE = LoginWithFirebaseApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Home;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
