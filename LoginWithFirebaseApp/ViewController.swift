@@ -137,6 +137,7 @@ class ViewController: UIViewController  {
 //        ボタンの丸みを設定
         registerButton.layer.cornerRadius = 10
         
+//        emailTextField・passwordTextFieldの処理は、extensionのdelegateで処理している
         emailTextField.delegate = self
         passwordTextField.delegate = self
         usernameTextField.delegate = self
@@ -201,7 +202,6 @@ extension ViewController: UITextFieldDelegate {
             registerButton.isEnabled = true
             registerButton.backgroundColor = UIColor.rgb(red: 255, green: 141, blue: 0)
         }
-        print("textField.text", textField.text)
     }
 }
 

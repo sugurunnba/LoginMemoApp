@@ -55,7 +55,7 @@
                                                 <rect key="frame" x="0.0" y="17" width="294" height="50.5"/>
                                                 <color key="backgroundColor" red="0.92941176469999998" green="0.94509803920000002" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -76,6 +76,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="ログイン">
                                     <fontDescription key="titleFontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tappedLoginButton:" destination="16r-ha-kff" eventType="touchUpInside" id="1QX-nF-tkC"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WvJ-3e-Sbg">
                                 <rect key="frame" x="51" y="596" width="312" height="30"/>
@@ -91,7 +94,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="コチラ"/>
                                         <connections>
-                                            <action selector="loginDontHaveAccount:" destination="16r-ha-kff" eventType="touchUpInside" id="U51-3f-vPz"/>
+                                            <action selector="dontHaveAccountButton:" destination="16r-ha-kff" eventType="touchUpInside" id="rB8-hM-jC0"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -116,7 +119,7 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="rbB-yf-8S2" id="gUm-8t-3ZC"/>
-                        <outlet property="loginButton" destination="8Rj-c0-h3j" id="Ill-hy-OKW"/>
+                        <outlet property="loginButton" destination="8Rj-c0-h3j" id="L0z-8u-ekc"/>
                         <outlet property="passwordTextField" destination="ZYx-tc-Y6M" id="kSq-QI-t5J"/>
                     </connections>
                 </viewController>
