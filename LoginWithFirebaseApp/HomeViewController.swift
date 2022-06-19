@@ -27,7 +27,8 @@ class HomeViewController: UIViewController {
         
         do {
             try Auth.auth().signOut()
-            dismiss(animated: true, completion: nil)
+            presentToMainViewController()
+//            dismiss(animated: true, completion: nil)
         } catch (let err) {
             print("ログアウトに失敗しました\(err)")
         }
@@ -51,6 +52,32 @@ class HomeViewController: UIViewController {
             let dataString = dateFormatterForCreatedAt(date: user.createAt.dateValue())
             dateLabel.text = "作成日: " + dataString
         }
+    }
+
+//    ログイン済みでなければ、新規登録画面を表示するメソッド
+//    viewDidAppearは、画面が呼び出された直後に呼び出されるメソッド。つまりSneneDelegateでHome.storyboardが呼び出されたタイミングで発火する。
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        confirmLoggetInUser()
+    }
+    
+//    ログイン済みでなければ、新規登録画面を表示するメソッド
+    private func confirmLoggetInUser() {
+        if Auth.auth().currentUser?.uid == nil || user == nil {
+            presentToMainViewController()
+        }
+    }
+    
+//    新規登録画面へ遷移するメソッド
+    private func presentToMainViewController() {
+//      画面の遷移準備
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+//      identifierを設定する際、「Use Storyboard　ID」をチェックも忘れずに。
+        let viewController = storyBoard.instantiateViewController(identifier: "ViewController") as! ViewController
+        let navController = UINavigationController(rootViewController: viewController)
+//      遷移後の画面をフルスクリーン化
+        navController.modalPresentationStyle = .fullScreen
+        self.present(navController, animated: true, completion: nil)
     }
     
 //    時間の設定メソッド

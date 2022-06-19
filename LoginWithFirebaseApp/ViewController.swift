@@ -36,7 +36,16 @@ class ViewController: UIViewController  {
         handleAuthToFirebase()
     }
     
-//    登録ボタンが押された時に呼び出されるメソッド
+//    「コチラ」ボタンを押下時
+    @IBAction func tappedAlrealyHaveAccountButton(_ sender: Any) {
+//      画面の遷移準備
+        let storyBoard = UIStoryboard(name: "Login", bundle: nil)
+//      identifierを設定する際、「Use Storyboard　ID」をチェックも忘れずに。
+        let loginViewController = storyBoard.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
+//      ボタン押下後、横にスライドしながら遷移する
+        navigationController?.pushViewController(loginViewController, animated: true)
+    }
+    //    登録ボタンが押された時に呼び出されるメソッド
     private func handleAuthToFirebase() {
 //        登録中のぐるぐる画面の設定
         HUD.show(.progress, onView: view)
@@ -136,6 +145,14 @@ class ViewController: UIViewController  {
         NotificationCenter.default.addObserver(self, selector: #selector(showKeyboard), name: UIResponder.keyboardWillShowNotification, object: nil)
 //        キーボードが非表示になったときに通知する
         NotificationCenter.default.addObserver(self, selector: #selector(hideKeyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+//    ナビゲーションバーを非表示にする
+//    画面が呼び出される直前に呼び出される
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.navigationBar.isHidden = true
     }
     
 //    NotificationCenter(show)で通知する内容

@@ -12,10 +12,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
 
+//    初期起動時の設定
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        
+        let window = UIWindow(windowScene: scene  as! UIWindowScene)
+        self.window = window
+        
+        window.makeKeyAndVisible()
+        
+//        初期起動したい画面名を設定
+        let storyborad = UIStoryboard(name: "Home", bundle: nil)
+//        HomeViewControllerのidentifiarを設定する。instantiateViewControllerでviewControllerのインスタンスを取得する。
+        let homeViewController = storyborad.instantiateViewController(withIdentifier: "HomeViewController")
+        
+        window.rootViewController = homeViewController
+        
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 
