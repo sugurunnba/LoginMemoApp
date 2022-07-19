@@ -52,23 +52,26 @@ class LoginViewController: UIViewController {
                     HUD.hide { (_) in
 //                        成功した後に、画面遷移を行いたいので、成功後に遷移が始まるようにする
                         HUD.flash(.success, onView: self.view, delay: 1) { (_) in
-                            self.presentToHomeViewController(user: user)
+                            self.performSegue(withIdentifier: "HomeViewController", sender: User(dic: data))
                         }
                     }
             }
         }
     }
     
-    private func presentToHomeViewController(user: User) {
-//      画面の遷移準備
-        let storyBoard = UIStoryboard(name: "Home", bundle: nil)
-//      identifierを設定する際、「Use Storyboard　ID」をチェックも忘れずに。
-        let homeViewController = storyBoard.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
-        homeViewController.user = user
-//      遷移後の画面をフルスクリーン化
-        homeViewController.modalPresentationStyle = .fullScreen
-        self.present(homeViewController, animated: true, completion: nil)
-    }
+//    private func presentToHomeViewController(user: User) {
+////      画面の遷移準備
+//        let storyBoard = UIStoryboard(name: "Home", bundle: nil)
+////      identifierを設定する際、「Use Storyboard　ID」をチェックも忘れずに。
+//        let homeViewController = storyBoard.instantiateViewController(identifier: "HomeViewController") as! UINavigationController
+////        homeViewController.user = user
+//        
+////      遷移後の画面をフルスクリーン化
+////        homeViewController.modalPresentationStyle = .fullScreen
+//        self.present(homeViewController, animated: true, completion: nil)
+        
+//        performSegue(withIdentifier: "HomeViewController1", sender: self)
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,6 +86,15 @@ class LoginViewController: UIViewController {
 //        delegate処理を行うクラスはどこ？ = それは自身のインスタンス内のメソッドで行う(ここではextensionのtextFieldChangeSelectionで実行)
         emailTextField.delegate = self
         passwordTextField.delegate = self
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "HomeViewController" {
+            let NC = segue.destination as! UINavigationController
+            let nextVC = NC.topViewController as! RootTableViewController
+            let user = sender as? User
+            nextVC.user = user
+        }
     }
 }
 

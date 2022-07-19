@@ -9,10 +9,8 @@
 /* Begin PBXBuildFile section */
 		29E5B5EFC9B7C2F2E57EEB86 /* Pods_LoginWithFirebaseApp_LoginWithFirebaseAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 730BBA9AE68FE34B256CBA8C /* Pods_LoginWithFirebaseApp_LoginWithFirebaseAppUITests.framework */; };
 		3D0249EF285626D2004D0620 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0249EE285626D1004D0620 /* Home.storyboard */; };
-		3D0249F3285628DD004D0620 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0249F2285628DD004D0620 /* HomeViewController.swift */; };
-		3D39E703285D73AF00331E66 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D39E702285D73AF00331E66 /* Login.storyboard */; };
 		3D39E705285D768E00331E66 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D39E704285D768E00331E66 /* LoginViewController.swift */; };
-		3D578A432855CACE0056AA68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D578A422855CACE0056AA68 /* GoogleService-Info.plist */; };
+		3DCCA8032877260A00928F4D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCCA8022877260A00928F4D /* HomeViewController.swift */; };
 		3DCF6608285F1635005D996E /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCF6607285F1635005D996E /* SignUp.storyboard */; };
 		3DCF660B285F241A005D996E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF660A285F241A005D996E /* User.swift */; };
 		3DE51C852854B5B0004A1384 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE51C842854B5B0004A1384 /* AppDelegate.swift */; };
@@ -24,6 +22,12 @@
 		3DE51CA62854B5B5004A1384 /* LoginWithFirebaseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE51CA52854B5B5004A1384 /* LoginWithFirebaseAppUITests.swift */; };
 		3DE51CA82854B5B5004A1384 /* LoginWithFirebaseAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE51CA72854B5B5004A1384 /* LoginWithFirebaseAppUITestsLaunchTests.swift */; };
 		3DE51CB52854C746004A1384 /* UIColor-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE51CB42854C746004A1384 /* UIColor-Extention.swift */; };
+		3DE7D82D2873256900F46E4D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DE7D82C2873256900F46E4D /* GoogleService-Info.plist */; };
+		3DE7D82F287327A600F46E4D /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE7D82E287327A500F46E4D /* Memo.swift */; };
+		3DE7D833287327D200F46E4D /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE7D830287327CD00F46E4D /* EditViewController.swift */; };
+		3DE7D834287327D200F46E4D /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE7D831287327CF00F46E4D /* RootTableViewController.swift */; };
+		3DE7D835287327D200F46E4D /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE7D832287327D200F46E4D /* AddViewController.swift */; };
+		3DE7D837287327D200F46E4D /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE7D836287327D200F46E4D /* Add.storyboard */; };
 		8259FAD1D9B0792AB002DBA6 /* Pods_LoginWithFirebaseAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BFB6FB004E2B9C66638D2D /* Pods_LoginWithFirebaseAppTests.framework */; };
 		CEEBD45F8D6B3207365735EC /* Pods_LoginWithFirebaseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6D49C452EC010DE0BCA14F /* Pods_LoginWithFirebaseApp.framework */; };
 /* End PBXBuildFile section */
@@ -50,10 +54,8 @@
 		19AFAE2C367FC5E7F4938EFB /* Pods-LoginWithFirebaseApp-LoginWithFirebaseAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginWithFirebaseApp-LoginWithFirebaseAppUITests.release.xcconfig"; path = "Target Support Files/Pods-LoginWithFirebaseApp-LoginWithFirebaseAppUITests/Pods-LoginWithFirebaseApp-LoginWithFirebaseAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		38819D8A759C77ADBB60D75D /* Pods-LoginWithFirebaseAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginWithFirebaseAppTests.release.xcconfig"; path = "Target Support Files/Pods-LoginWithFirebaseAppTests/Pods-LoginWithFirebaseAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		3D0249EE285626D1004D0620 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		3D0249F2285628DD004D0620 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		3D39E702285D73AF00331E66 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		3D39E704285D768E00331E66 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		3D578A422855CACE0056AA68 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3DCCA8022877260A00928F4D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../../../../LoginWithFirebaseApp/LoginWithFirebaseApp/Controllers/HomeViewController.swift; sourceTree = "<group>"; };
 		3DCF6607285F1635005D996E /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		3DCF660A285F241A005D996E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3DE51C812854B5B0004A1384 /* LoginWithFirebaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginWithFirebaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,12 @@
 		3DE51CA52854B5B5004A1384 /* LoginWithFirebaseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithFirebaseAppUITests.swift; sourceTree = "<group>"; };
 		3DE51CA72854B5B5004A1384 /* LoginWithFirebaseAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithFirebaseAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3DE51CB42854C746004A1384 /* UIColor-Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extention.swift"; sourceTree = "<group>"; };
+		3DE7D82C2873256900F46E4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3DE7D82E287327A500F46E4D /* Memo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		3DE7D830287327CD00F46E4D /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		3DE7D831287327CF00F46E4D /* RootTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTableViewController.swift; sourceTree = "<group>"; };
+		3DE7D832287327D200F46E4D /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		3DE7D836287327D200F46E4D /* Add.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Add.storyboard; path = ../../../../../memoAppFirebase6/memoAppFirebase6/Add.storyboard; sourceTree = "<group>"; };
 		4C9C174F10C125F4BBA1ECA8 /* Pods-LoginWithFirebaseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginWithFirebaseApp.debug.xcconfig"; path = "Target Support Files/Pods-LoginWithFirebaseApp/Pods-LoginWithFirebaseApp.debug.xcconfig"; sourceTree = "<group>"; };
 		730BBA9AE68FE34B256CBA8C /* Pods_LoginWithFirebaseApp_LoginWithFirebaseAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginWithFirebaseApp_LoginWithFirebaseAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6D49C452EC010DE0BCA14F /* Pods_LoginWithFirebaseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginWithFirebaseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,9 +126,12 @@
 		3DCF6604285F1561005D996E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3DE7D832287327D200F46E4D /* AddViewController.swift */,
+				3DE7D830287327CD00F46E4D /* EditViewController.swift */,
+				3DE7D831287327CF00F46E4D /* RootTableViewController.swift */,
 				3DE51C882854B5B0004A1384 /* ViewController.swift */,
-				3D0249F2285628DD004D0620 /* HomeViewController.swift */,
 				3D39E704285D768E00331E66 /* LoginViewController.swift */,
+				3DCCA8022877260A00928F4D /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -128,8 +139,8 @@
 		3DCF6605285F15AC005D996E /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				3DE7D836287327D200F46E4D /* Add.storyboard */,
 				3D0249EE285626D1004D0620 /* Home.storyboard */,
-				3D39E702285D73AF00331E66 /* Login.storyboard */,
 				3DCF6607285F1635005D996E /* SignUp.storyboard */,
 			);
 			path = Storyboards;
@@ -146,6 +157,7 @@
 		3DCF6609285F2408005D996E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3DE7D82E287327A500F46E4D /* Memo.swift */,
 				3DCF660A285F241A005D996E /* User.swift */,
 			);
 			path = Models;
@@ -185,7 +197,7 @@
 				3DE51C8D2854B5B4004A1384 /* Assets.xcassets */,
 				3DE51C8F2854B5B4004A1384 /* LaunchScreen.storyboard */,
 				3DE51C922854B5B4004A1384 /* Info.plist */,
-				3D578A422855CACE0056AA68 /* GoogleService-Info.plist */,
+				3DE7D82C2873256900F46E4D /* GoogleService-Info.plist */,
 			);
 			path = LoginWithFirebaseApp;
 			sourceTree = "<group>";
@@ -335,9 +347,9 @@
 			files = (
 				3DE51C912854B5B4004A1384 /* LaunchScreen.storyboard in Resources */,
 				3D0249EF285626D2004D0620 /* Home.storyboard in Resources */,
-				3D39E703285D73AF00331E66 /* Login.storyboard in Resources */,
+				3DE7D837287327D200F46E4D /* Add.storyboard in Resources */,
 				3DCF6608285F1635005D996E /* SignUp.storyboard in Resources */,
-				3D578A432855CACE0056AA68 /* GoogleService-Info.plist in Resources */,
+				3DE7D82D2873256900F46E4D /* GoogleService-Info.plist in Resources */,
 				3DE51C8E2854B5B4004A1384 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,12 +479,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D39E705285D768E00331E66 /* LoginViewController.swift in Sources */,
-				3D0249F3285628DD004D0620 /* HomeViewController.swift in Sources */,
 				3DE51C892854B5B0004A1384 /* ViewController.swift in Sources */,
+				3DE7D835287327D200F46E4D /* AddViewController.swift in Sources */,
+				3DE7D82F287327A600F46E4D /* Memo.swift in Sources */,
 				3DE51CB52854C746004A1384 /* UIColor-Extention.swift in Sources */,
 				3DE51C852854B5B0004A1384 /* AppDelegate.swift in Sources */,
 				3DE51C872854B5B0004A1384 /* SceneDelegate.swift in Sources */,
+				3DCCA8032877260A00928F4D /* HomeViewController.swift in Sources */,
+				3DE7D834287327D200F46E4D /* RootTableViewController.swift in Sources */,
 				3DCF660B285F241A005D996E /* User.swift in Sources */,
+				3DE7D833287327D200F46E4D /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

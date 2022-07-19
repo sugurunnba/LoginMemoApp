@@ -47,7 +47,7 @@ class ViewController: UIViewController  {
 //       「コチラ」ボタンを押下時のメソッド
     private func pushToLoginViewController() {
 //      画面の遷移準備
-        let storyBoard = UIStoryboard(name: "Login", bundle: nil)
+        let storyBoard = UIStoryboard(name: "Home", bundle: nil)
 //      identifierを設定する際、「Use Storyboard　ID」をチェックも忘れずに。
         let loginViewController = storyBoard.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
 //      ボタン押下後、横にスライドしながら遷移する
@@ -148,7 +148,7 @@ class ViewController: UIViewController  {
             HUD.hide { (_) in
 //                成功した後に、画面遷移を行いたいので、成功後に遷移が始まるようにする
                 HUD.flash(.success, onView: self.view, delay: 1) { (_) in
-                    self.presentToHomeViewController(user: user)
+                    self.performSegue(withIdentifier: "HomeViewController", sender: User(dic: data))
                 }
             }
         }
@@ -156,13 +156,15 @@ class ViewController: UIViewController  {
     
     private func presentToHomeViewController(user: User) {
 //      画面の遷移準備
-        let storyBoard = UIStoryboard(name: "Home", bundle: nil)
-//      identifierを設定する際、「Use Storyboard　ID」をチェックも忘れずに。
-        let homeViewController = storyBoard.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
-        homeViewController.user = user
-//      遷移後の画面をフルスクリーン化
-        homeViewController.modalPresentationStyle = .fullScreen
-        self.present(homeViewController, animated: true, completion: nil)
+//        let storyBoard = UIStoryboard(name: "Home", bundle: nil)
+////      identifierを設定する際、「Use Storyboard　ID」をチェックも忘れずに。
+//        let homeViewController = storyBoard.instantiateViewController(identifier: "HomeViewController") as! RootTableViewController
+//        homeViewController.user = user
+////      遷移後の画面をフルスクリーン化
+//        homeViewController.modalPresentationStyle = .fullScreen
+//        self.present(homeViewController, animated: true, completion: nil)
+        
+        performSegue(withIdentifier: "HomeViewController", sender: self)
     }
     
 //    NotificationCenter(show)で通知する内容
@@ -193,6 +195,17 @@ class ViewController: UIViewController  {
 //    テキストフィールドを選択している際、テキストフィールド外を押せばキーボードが収まる
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "HomeViewController" {
+
+        
+            let NC = segue.destination as! UINavigationController
+            let nextVC = NC.topViewController as! RootTableViewController
+            let user = sender as? User
+            nextVC.user = user
+        }
     }
 
 }

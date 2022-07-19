@@ -4,13 +4,13 @@
 target 'LoginWithFirebaseApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
-  # Pods for LoginWithFirebaseApp
   pod 'Firebase/Analytics'
   pod 'FirebaseAuth'
   pod 'FirebaseFirestore'
   pod 'PKHUD', '~> 5.0'
 
+
+  # Pods for LoginWithFirebaseApp
   target 'LoginWithFirebaseAppTests' do
     inherit! :search_paths
     # Pods for testing

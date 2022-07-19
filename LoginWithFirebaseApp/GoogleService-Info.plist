@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>856379208917-k2jclhhn8pnqo2bebvg9sd4l2elf1m1p.apps.googleusercontent.com</string>
+	<string>595298464465-qnm8npa35e7jsa2dc8houbpdb02b4lpe.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.856379208917-k2jclhhn8pnqo2bebvg9sd4l2elf1m1p</string>
+	<string>com.googleusercontent.apps.595298464465-qnm8npa35e7jsa2dc8houbpdb02b4lpe</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCvhFMB2mxy4C5oQSxGD_SseaZNmzfNWCQ</string>
+	<string>AIzaSyBN6ZSxmHm3wQ2c2gKtBw0WiGWxExaK1oE</string>
 	<key>GCM_SENDER_ID</key>
-	<string>856379208917</string>
+	<string>595298464465</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.Stakaki.LoginWithFirebaseApp</string>
+	<string>com.Stakaki.memoAppFirebase6</string>
 	<key>PROJECT_ID</key>
-	<string>loginwithfirebaseapp-29399</string>
+	<string>memoappfirebase6</string>
 	<key>STORAGE_BUCKET</key>
-	<string>loginwithfirebaseapp-29399.appspot.com</string>
+	<string>memoappfirebase6.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:856379208917:ios:35dc638db78c1c26f85e5c</string>
+	<string>1:595298464465:ios:98df0a1a05ba251ed78bf0</string>
 </dict>
 </plist>
