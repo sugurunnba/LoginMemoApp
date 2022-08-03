@@ -249,7 +249,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="tappedLoginButton:" destination="Pms-3d-B9Q" eventType="touchUpInside" id="BW1-8s-FyR"/>
-                                    <segue destination="icC-qX-6RQ" kind="show" identifier="HomeViewController" id="Inv-u5-TJz"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfv-nP-qF5">
@@ -292,12 +291,13 @@
                     <connections>
                         <outlet property="emailTextField" destination="gQd-Ry-hcA" id="Bsk-eR-GHf"/>
                         <outlet property="loginButton" destination="GCm-3Z-UEj" id="gw4-mb-2O6"/>
-                        <outlet property="passwordTextField" destination="ZAM-Wr-QSn" id="BxA-H2-rWd"/>
+                        <outlet property="passwordTextField" destination="ZAM-Wr-QSn" id="aea-uN-y0V"/>
+                        <segue destination="icC-qX-6RQ" kind="show" id="980-Ei-v5N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uJ1-bW-1GQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2293" y="447"/>
+            <point key="canvasLocation" x="2170" y="-224"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kCe-dC-vOI">
@@ -435,11 +435,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VTa-x0-Fzz" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2293" y="-236"/>
+            <point key="canvasLocation" x="2170" y="490"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Inv-u5-TJz"/>
+        <segue reference="980-Ei-v5N"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
