@@ -154,7 +154,7 @@ class ViewController: UIViewController  {
         }
     }
     
-    private func presentToHomeViewController(user: User) {
+//    private func HomeViewController(user: User) {
 //      画面の遷移準備
 //        let storyBoard = UIStoryboard(name: "Home", bundle: nil)
 ////      identifierを設定する際、「Use Storyboard　ID」をチェックも忘れずに。
@@ -164,8 +164,8 @@ class ViewController: UIViewController  {
 //        homeViewController.modalPresentationStyle = .fullScreen
 //        self.present(homeViewController, animated: true, completion: nil)
         
-        performSegue(withIdentifier: "HomeViewController", sender: self)
-    }
+//        performSegue(withIdentifier: "HomeViewController", sender: self)
+//    }
     
 //    NotificationCenter(show)で通知する内容
 //    キーボードを表示した時、全体が見えるように調整する

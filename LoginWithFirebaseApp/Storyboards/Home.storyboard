@@ -12,7 +12,7 @@
         <!--Root Table View Controller-->
         <scene sceneID="97K-qR-Mbp">
             <objects>
-                <tableViewController storyboardIdentifier="HomeViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6us-vu-6Ko" customClass="RootTableViewController" customModule="LoginWithFirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="HomeViewController1" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6us-vu-6Ko" customClass="RootTableViewController" customModule="LoginWithFirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="sMf-PA-aBU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,7 +52,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="PHT-f1-CLo">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="UOl-8S-FR3">
+                        <barButtonItem key="leftBarButtonItem" title="ログアウト" id="UOl-8S-FR3">
                             <connections>
                                 <action selector="tappedLogoutButton:" destination="6us-vu-6Ko" id="Mx0-Wc-xxW"/>
                             </connections>
@@ -158,12 +158,12 @@
                     </buttonConfiguration>
                 </button>
             </objects>
-            <point key="canvasLocation" x="5402.898550724638" y="20.758928571428569"/>
+            <point key="canvasLocation" x="5351" y="21"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8gK-qf-zev">
             <objects>
-                <navigationController storyboardIdentifier="NavigationHomeViewController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="icC-qX-6RQ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="HomeViewController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" toolbarHidden="NO" id="icC-qX-6RQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="04S-XI-qGI"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JoJ-oY-pkk">
@@ -171,6 +171,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dbm-ka-WGm">
+                        <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="6us-vu-6Ko" kind="relationship" relationship="rootViewController" id="hbM-DU-vzM"/>
                     </connections>
@@ -292,7 +296,7 @@
                         <outlet property="emailTextField" destination="gQd-Ry-hcA" id="Bsk-eR-GHf"/>
                         <outlet property="loginButton" destination="GCm-3Z-UEj" id="gw4-mb-2O6"/>
                         <outlet property="passwordTextField" destination="ZAM-Wr-QSn" id="aea-uN-y0V"/>
-                        <segue destination="icC-qX-6RQ" kind="show" id="980-Ei-v5N"/>
+                        <segue destination="icC-qX-6RQ" kind="show" identifier="HomeViewController" id="980-Ei-v5N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uJ1-bW-1GQ" sceneMemberID="firstResponder"/>
@@ -386,7 +390,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="tappedRegisterButton:" destination="BKv-hw-dHs" eventType="touchUpInside" id="UqR-dm-qjX"/>
-                                    <segue destination="icC-qX-6RQ" kind="show" identifier="HomeViewController" id="F4U-jN-Ypk"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDd-KG-Pfp">
@@ -431,6 +434,7 @@
                         <outlet property="passwordTextField" destination="gLN-NL-B22" id="HwC-ud-c7f"/>
                         <outlet property="registerButton" destination="2fV-AC-xvD" id="cUd-rz-kA1"/>
                         <outlet property="usernameTextField" destination="SbL-Pb-ifs" id="50Z-kB-bWn"/>
+                        <segue destination="icC-qX-6RQ" kind="show" identifier="HomeViewController" id="zb0-79-pGm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VTa-x0-Fzz" sceneMemberID="firstResponder"/>
@@ -439,7 +443,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="980-Ei-v5N"/>
+        <segue reference="zb0-79-pGm"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
